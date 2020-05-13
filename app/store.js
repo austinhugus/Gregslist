@@ -1,5 +1,14 @@
 import Car from "./Models/Car.js";
+import House from "./Models/House"
 
+let _house = {
+
+  house: [
+    new House({ price: 250000, bedrooms: 3, bathrooms: 2, sqft: 1700, address: "123 Code Ave, Boise, ID", imgUrl: "https://i.pinimg.com/236x/c7/7f/c6/c77fc649ec89a3ff68435340af113acb--funny-faces-unusual-buildings.jpg" }),
+    new House({ price: 15000000, bedrooms: 10, bathrooms: 15, sqft: 15000, address: "456 Im Rich Dr, Boise, ID", imgUrl: "https://d3eys52k95jjdh.cloudfront.net/wp-content/uploads/2019/07/cropped-He_Tatooine_21.jpg" })
+  ]
+
+}
 let _state = {
   /** @type {Car[]} */
   cars: [
@@ -30,5 +39,10 @@ class Store {
   }
 }
 
+
+
 const STORE = new Store();
 export default STORE;
+
+
+
